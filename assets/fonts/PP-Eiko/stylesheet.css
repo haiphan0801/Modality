@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'PP Eiko';
+    src: url('PPEiko-Heavy.woff2') format('woff2'),
+        url('PPEiko-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Eiko';
+    src: url('PPEiko-Thin.woff2') format('woff2'),
+        url('PPEiko-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Eiko';
+    src: url('PPEiko-Medium.woff2') format('woff2'),
+        url('PPEiko-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
