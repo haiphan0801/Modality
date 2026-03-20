@@ -11,6 +11,7 @@
 	<title></title>
 	<meta name="description" content="SFI">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="assets/libs/effect-carousel.min.css">
 
 	<link rel="stylesheet" href="assets/fonts/PP-Eiko/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
@@ -21,7 +22,7 @@
 
 <body>
 	<div id="wrapper">
-		<header id="header" class="site-header">
+		<header id="header" class="site-header hidden">
 			<div class="container">
 				<div class="wrap-header">
 					<div class="site-brand">
@@ -42,11 +43,61 @@
 					<div class="wrap-btn-header">
 						<a href="#" class="btn btn-primary ">Contact Us</a>
 					</div>
+					<div class="hambuger-mobile">
+						<span class="lines line-1"></span>
+						<span class="lines line-2"></span>
+						<span class="lines line-3"></span>
+					</div>
 				</div>
 			</div>
 
 		</header>
-		<main id="content" class="site-main">
+		<div class="wrap-menu-mobile">
+			<div class="inner-menu-mobile">
+				<nav class="main-menu">
+					<ul>
+						<li><a href="#">Our Story</a></li>
+						<li><a href="#">Transactions</a></li>
+						<li><a href="#">Insights</a></li>
+						<li><a href="#">Team</a></li>
+						<li><a href="#">News</a></li>
+					</ul>
+				</nav>
+				<div class="contact-info-header">
+					<div class="contact-info-header-group">
+						<span class="contact-info-header-label">Office:</span>
+						<div class="contact-info-header-desc">
+							<address class="">
+								350 Fifth Avenue, Suite 4100<br>
+								New York, NY 10118<br>
+								United States
+							</address>
+						</div>
+					</div>
+
+					<div class="contact-info-header-group">
+						<span class="contact-info-header-label">General Inquiries:</span>
+						<div class="contact-info-header-desc">
+							<a href="mailto:inquiries@modalityadvisors.com"
+								class="contact-info-header-email">inquiries@modalityadvisors.com</a>
+						</div>
+					</div>
+
+					<div class="contact-info-header-group">
+						<span class="contact-info-header-label">Media Inquiries:</span>
+						<div class="contact-info-header-desc">
+							<a href="mailto:media@modalityadvisors.com"
+								class="contact-info-header-email">media@modalityadvisors.com</a>
+						</div>
+
+					</div>
+
+					<a href="#" class="btn btn-primary">Contact Us</a>
+				</div>
+			</div>
+
+		</div>
+		<main id="content" class="site-main hidden" >
 			<div class="relative wrap-hero-bg">
 				<section class="bg-hero">
 					<img src="assets/images/home/bg-hero.png" alt="">
@@ -169,6 +220,76 @@
 				</div>
 
 			</section>
+			<section class="built-for-leaders" style="--bg:url('../images/home/leaders-bg.png');">
+				<div class="container">
+					<div class="built-for-leaders-wrapper">
+						<div class="built-for-leaders-content">
+							<h2 class="built-for-leaders-title">Built For Leaders at the Intersection</h2>
+							<p class="built-for-leaders-subtitle">Supporting Managers Seeking to Expand Client Solutions
+								&
+								Navigating
+								Complexity</p>
+							<p class="built-for-leaders-desc">We serve as a force multiplier for teams requiring
+								high-level
+								strategic
+								counsel and rigorous deal execution.</p>
+						</div>
+						<div class="built-for-leaders-swiper">
+							<div class="swiper ">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide built-for-leaders-slide">
+										<span class="slide-number">01</span>
+										<div>
+											<h3 class="slide-title">Growth-Stage Managers</h3>
+											<p class="slide-desc">architecting their next phase of expansion.</p>
+										</div>
+									</div>
+									<div class="swiper-slide built-for-leaders-slide">
+										<span class="slide-number">02</span>
+										<div>
+											<h3 class="slide-title">Emerging Firms</h3>
+											<p class="slide-desc">encountering critical inflection points in their
+												lifecycle.</p>
+										</div>
+									</div>
+									<div class="swiper-slide built-for-leaders-slide">
+										<span class="slide-number">03</span>
+										<div>
+											<h3 class="slide-title">Institutional Platforms</h3>
+											<p class="slide-desc">operationalizing complex new mandates.</p>
+										</div>
+									</div>
+									<div class="swiper-slide built-for-leaders-slide">
+										<span class="slide-number">04</span>
+										<div>
+											<h3 class="slide-title">Capital Raising</h3>
+											<p class="slide-desc">operationalizing complex new mandates.</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="built-for-leaders-prev btn-leaders-swiper"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M5.64689 11.6463L10.6469 6.64635C10.7408 6.55246 10.8681 6.49971 11.0009 6.49971C11.1337 6.49971 11.261 6.55246 11.3549 6.64635C11.4488 6.74023 11.5015 6.86757 11.5015 7.00035C11.5015 7.13312 11.4488 7.26046 11.3549 7.35435L7.20789 11.5003L18.0009 11.5003C18.1335 11.5003 18.2607 11.553 18.3544 11.6468C18.4482 11.7406 18.5009 11.8677 18.5009 12.0003C18.5009 12.133 18.4482 12.2601 18.3544 12.3539C18.2607 12.4477 18.1335 12.5003 18.0009 12.5003L7.20789 12.5003L11.3549 16.6463C11.4488 16.7402 11.5015 16.8676 11.5015 17.0003C11.5015 17.1331 11.4488 17.2605 11.3549 17.3543C11.261 17.4482 11.1337 17.501 11.0009 17.501C10.8681 17.501 10.7408 17.4482 10.6469 17.3543L5.64689 12.3543C5.60033 12.3079 5.56339 12.2527 5.53818 12.192C5.51298 12.1312 5.5 12.0661 5.5 12.0003C5.5 11.9346 5.51298 11.8695 5.53818 11.8087C5.56339 11.748 5.60033 11.6928 5.64689 11.6463Z"
+											fill="white" />
+									</svg></div>
+								<div class="built-for-leaders-next btn-leaders-swiper"><svg
+										xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+										fill="none">
+										<path
+											d="M18.3531 11.6463L13.3531 6.64635C13.2592 6.55246 13.1319 6.49971 12.9991 6.49971C12.8663 6.49971 12.739 6.55246 12.6451 6.64635C12.5512 6.74023 12.4985 6.86757 12.4985 7.00035C12.4985 7.13312 12.5512 7.26046 12.6451 7.35435L16.7921 11.5003L5.99911 11.5003C5.8665 11.5003 5.73932 11.553 5.64555 11.6468C5.55178 11.7406 5.49911 11.8677 5.49911 12.0003C5.49911 12.133 5.55178 12.2601 5.64555 12.3539C5.73932 12.4477 5.8665 12.5003 5.99911 12.5003L16.7921 12.5003L12.6451 16.6463C12.5512 16.7402 12.4985 16.8676 12.4985 17.0003C12.4985 17.1331 12.5512 17.2605 12.6451 17.3543C12.739 17.4482 12.8663 17.501 12.9991 17.501C13.1319 17.501 13.2592 17.4482 13.3531 17.3543L18.3531 12.3543C18.3997 12.3079 18.4366 12.2527 18.4618 12.192C18.487 12.1312 18.5 12.0661 18.5 12.0003C18.5 11.9346 18.487 11.8695 18.4618 11.8087C18.4366 11.748 18.3997 11.6928 18.3531 11.6463Z"
+											fill="white" />
+									</svg></div>
+								<div class="swiper-pagination built-for-leaders-pagination"></div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</section>
 			<section class="featured-insight">
 				<div class="container">
 					<span class="featured-insight-label"><svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"
@@ -270,64 +391,12 @@
 
 	<script type="text/javascript" src="assets/js/jquery-3.5.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="assets/libs/effect-carousel.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 	<script type="text/javascript">
-		document.addEventListener("DOMContentLoaded", function () {
-			const elements = document.querySelectorAll(".typing-fade");
-			if (!elements.length) return;
 
-			elements.forEach((el) => {
-				const text = el.textContent.replace(/\s+/g, " ").trim();
-				el.textContent = "";
-
-				[...text].forEach((char) => {
-					const span = document.createElement("span");
-					span.textContent = char;
-					span.style.color = "rgba(0, 44, 129, 0.40)";
-					el.appendChild(span);
-				});
-
-				const letters = el.querySelectorAll("span");
-
-				function updateTypingByScroll() {
-					const rect = el.getBoundingClientRect();
-					const windowHeight = window.innerHeight;
-
-					const start = windowHeight * 0.8;
-					const end = windowHeight * 0.2;
-
-					let progress = (start - rect.top) / (start - end);
-					progress = Math.max(0, Math.min(1, progress));
-
-					const activeCount = Math.floor(progress * letters.length);
-
-					letters.forEach((letter, index) => {
-						letter.style.color = index < activeCount ? "#002C81" : "rgba(0, 44, 129, 0.40)";
-					});
-				}
-
-				updateTypingByScroll();
-				window.addEventListener("scroll", updateTypingByScroll);
-			});
-
-			const scrollBtn = document.querySelector(".home-hero-scroll");
-			if (!scrollBtn) return;
-
-			scrollBtn.addEventListener("click", function () {
-				const currentSection = scrollBtn.closest("section");
-				if (!currentSection) return;
-
-				const nextSection = currentSection.nextElementSibling;
-				if (nextSection) {
-					nextSection.scrollIntoView({
-						behavior: "smooth",
-						block: "start",
-					});
-				}
-			});
-		});
 	</script>
 
 </body>
